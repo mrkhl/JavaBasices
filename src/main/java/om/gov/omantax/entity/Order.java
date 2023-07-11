@@ -9,6 +9,7 @@ public class Order {
     private double totalDue;
     private OrderStatus status;
     private User user;
+    private  static String familyName;
 
     public Order(int id, LocalDateTime dateTime, double price, double totalDue, OrderStatus status, User user) {
         this.id = id;

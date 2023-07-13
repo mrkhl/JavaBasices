@@ -6,6 +6,7 @@ import om.gov.omantax.entity.Product;
 import om.gov.omantax.entity.User;
 import om.gov.omantax.entity2.*;
 
+import java.io.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +17,54 @@ import static om.gov.omantax.entity.OrderStatus.PLACED;
 public class Main {
 
     public static void main(String[] args) {
+
+/*        <<<<<<<<<< write in file using stream fileWriter>>>>>>>>>>>>>>>>>>
+        try {
+            FileWriter fileWriter = new FileWriter("hamada.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+
+            bufferedWriter.write("Mohammed finished his assignments");
+            bufferedWriter.flush();
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }*/
+
+/*
+                        <<<<<<InputStream&OutPutStream>>>>>>>>>>>
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream("hamada.png");
+            byte[] buffer = new byte[1024];
+            FileInputStream fileInputStream = new FileInputStream("cover.png");
+            while (fileInputStream.read(buffer) != -1){
+                fileOutputStream.write(buffer);
+            }
+            fileOutputStream.flush();
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }*/
+
+
+/*
+                               <<<<<<<< Read from txt file using stream FileReader>>>>>>>>>>>
+        try {
+            FileReader fileReader = new FileReader("hamada.txt");
+            BufferedReader bufferedReader =new BufferedReader(fileReader);
+
+            String line1 = bufferedReader.readLine();
+            System.out.println(line1);
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }*/
+
 
         //Collection and Map >>>>>>>>>>
 
@@ -46,7 +95,7 @@ public class Main {
 //
 //        double sum = sumOfAres(shapes1);
 //        System.out.println(sum);
-    //polymorphism,interference,Generics<<<<<
+    //             <<<<<<<<<polymorphism,interference,Generics>>>>>>>>>>>
 
 //
 //        Product pro = new Product(12,"hammd",1.0);
@@ -59,7 +108,7 @@ public class Main {
 
 
     }
-    //polymorphism,interference,Generics>>>>>>>
+    //                   <<<<<<<<<<<<polymorphism,interference,Generics>>>>>>>
 //    public static double sumOfAres(Shape[] shapes){
 //        double sum =0;
 //        for (Shape sh: shapes){
